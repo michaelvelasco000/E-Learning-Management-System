@@ -1,0 +1,13 @@
+
+<?php 
+$id = $get_id;
+
+// Generate a hash of the ID using the sha1() function
+$hash = sha1($id);
+
+// Use the hash in the URL
+$url = "/items/" . $hash;
+?>
+<script>
+    history.pushState(null, null, "test");
+</script>

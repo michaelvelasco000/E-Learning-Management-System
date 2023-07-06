@@ -1,0 +1,13 @@
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301] 
+# For .php & .html URL's:
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php 
+
+RewriteRule ^take_test/([0-9a-zA-Z]+) take_test.php?id=$1&class_quiz_id=$2&test=ok&quiz_id=$3 [NC,L]
+

@@ -1,0 +1,3 @@
+<Files "take_quiz.php">
+  Deny from all
+</Files>

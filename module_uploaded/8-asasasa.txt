@@ -1,0 +1,2 @@
+71 <a href="addstudents.php<?php echo '?id=' . $get_id ?>" type="button"
+                            class="btn btn-info btn-md">Add Students</a>
